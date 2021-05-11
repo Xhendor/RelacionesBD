@@ -17,6 +17,6 @@ class Imgbicicletas extends Model
     // Relación Inversa (Opcional)
     public function bicicleta()
     {
-        return $this->belongsTo('App\Models\Bicicletas');
+        return $this->belongsTo(Bicicletas::class);
     }
 }

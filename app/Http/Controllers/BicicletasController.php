@@ -22,7 +22,7 @@ class BicicletasController extends Controller
     // Leer Registros (Read)
     public function index()
     {
-        $bicicletas = Bicicletas::select('id', 'nombre', 'precio', 'stock', 'imagenes', 'url')->with('imagenesbicicletas:nombre')->get();
+        $bicicletas = Bicicletas::select('id', 'nombre', 'precio', 'stock', 'imagenes', 'url')->with('Imagenesbicicletas:nombre')->get();
 
         //$ib = Bicicletas::find(3)->imagenesbicicletas;
 
@@ -30,7 +30,7 @@ class BicicletasController extends Controller
 
         // $imagenes = Bicicletas::find(3)->imagenesbicicletas;
 
-        return view('admin.bicicletas.index', compact('bicicletas'));
+        return view('admin/bicicletas.index', compact('bicicletas'));
     }
 
     // Crear un Registro (Create)

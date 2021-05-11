@@ -29,6 +29,10 @@ Route::put('admin/bicicletas/store', 'BicicletasController@store')->name('admin/
 /* Leer */
 Route::get('admin/bicicletas', 'BicicletasController@index')->name('admin/bicicletas');
 
+/*Visualizar registro*/
+Route::get('admin/bicicletas/detallesproducto/{id}', 'BicicletasController@detallesproducto')->name('admin/bicicletas/detallesproducto');
+
+
 /* Actualizar */
 Route::get('admin/bicicletas/actualizar/{id}', 'BicicletasController@actualizar')->name('admin/bicicletas/actualizar');
 Route::put('admin/bicicletas/update/{id}', 'BicicletasController@update')->name('admin/bicicletas/update');
