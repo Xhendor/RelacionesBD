@@ -13,11 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-
-});
+//Route::get('/', function () {
+//    return view('dashboard.index');
+//});
 // Ruta Dashboard
+Route::get('/', 'DashboardController@index')->name('/');
+
 Route::get('admin/dashboard', 'DashboardController@index')->name('admin/dashboard');
 
 // Rutas CRUD
