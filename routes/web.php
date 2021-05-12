@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 });
 // Ruta Dashboard
-Route::get('admin/dashboard', 'Dashboard@index')->name('admin/dashboard');
+Route::get('admin/dashboard', 'DashboardController@index')->name('admin/dashboard');
 
 // Rutas CRUD
 

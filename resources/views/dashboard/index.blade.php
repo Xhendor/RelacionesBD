@@ -12,11 +12,11 @@
     <title>Como crear un CRUD con Laravel 5.8 y Bootstrap 4 </title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="../../css/app.css">      
+    <link rel="stylesheet" type="text/css" href="../../css/app.css">
 
   </head>
 
-  <body> 
+  <body>
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -36,7 +36,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contacto</a>
-          </li> 
+          </li>
           </ul>
           <form name="bencc" method="get" action="http://www.google.com/search" id="bencc" class="form-inline mt-2 mt-md-0" target="_blank">
             <input type="hidden" name="domains" value="blog.nubecolectiva.com">
@@ -52,7 +52,7 @@
     <div class="pccp mt-5 mb-3" align="center">
               <!-- P -->
               <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-              
+
               <ins class="adsbygoogle"
                    style="display:block"
                    data-ad-client="ca-pub-2390065838671224"
@@ -112,7 +112,7 @@
 
       <div class="page-content">
         <div class="row">
-          
+
           <div class="col-md-2">
             <div class="sidebar content-box" style="display: block;">
 
@@ -121,7 +121,8 @@
                     <a href="{{ route('admin/dashboard') }}"> Dashboard</a>
                   </li>
                   <li class="list-group-item">
-                    <a href="{{ route('admin/jugos') }}"> Jugos</a>
+{{--                    <a href="{{ route('admin/jugos') }}"> Jugos</a>--}}
+                      <a href="{{ route('admin/bicicletas') }}"> Bicicletas</a>
                   </li>
                   <li class="list-group-item">
                     Opción 1
@@ -132,7 +133,7 @@
               </ul>
             </div>
           </div>
-        
+
             <div class="col-md-10">
 
         <nav aria-label="breadcrumb">
@@ -140,16 +141,16 @@
             <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
           </ol>
         </nav>
-        
+
         <div class="row">
 
           <div class="col-md-12">
 
               <div class="content-box-large">
-                
+
                 <div class="panel-body">
 
-                  <h1>Bienvenido al Administrador</h1>  
+                  <h1>Bienvenido al Administrador</h1>
 
                 </div>
 
@@ -164,10 +165,10 @@
       </div>
 
         </div>
-              
+
             </div>
 
-          </div>          
+          </div>
 
           <hr>
 
@@ -191,11 +192,11 @@
               </div>
 
               <div class="col-md-3">
-                <h3>Backend</h3>                
+                <h3>Backend</h3>
                 <a href="http://blog.nubecolectiva.com/category/backend/" target="_blank">
                   <img class="img-fluid" src="http://blog.nubecolectiva.com/wp-content/uploads/2018/11/img_destacada_blog_devs-8-300x169.png">
                 </a>
-              </div>              
+              </div>
 
               <div class="col-md-3">
                 <h3>Android</h3>
@@ -211,9 +212,9 @@
                 </a>
               </div>
 
-          </div>           
-          
-          
+          </div>
+
+
         </div>
 
 
@@ -221,11 +222,11 @@
     <footer class="text-muted mt-3 mb-3">
         <div align="center">
           Desarrollado por <a href="http://www.nubecolectiva.com" target="_blank">Nube Colectiva</a>
-      </div> 
+      </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script type="text/javascript" src="../../js/app.js"></script>
-    
+
   </body>
 </html>
